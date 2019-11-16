@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  border-radius: 3% 3% 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 320px;
+  overflow: hidden;
+}
+
+button {
+  background: #ccc;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-width: 0 1px 1px;
+  cursor: pointer;
+  font-size: 1.3em;
+  height: 3.5em;
+  line-height: 1.2;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: 25%;
+}
+
+button:focus,
+button:active {
+  border: 3px solid rgb(146, 73, .5);
+  border-width: 3px 0 0 3px;
+}
+
+.display {
+  align-items: center;
+  background: rgba(0,0,0,.8);
+  color: #ccc;
+  display: flex;
+  font-size: 1.8em;
+  justify-content: flex-end;
+  padding: .7em .5em;
+  text-align: right;
+  width: 100%;
+}
+
+[data-rs],
+[data-op] {
+  background: rgba(200,100,0,1);
+  color: #fff;
+}
+
+/* --------------------------
+  Grid
+-------------------------- */
+.block-2 {
+  width: 50%;
+}
+
+.block-3 {
+  width: 75%;
+}

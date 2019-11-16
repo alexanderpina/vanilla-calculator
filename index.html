@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Calculator</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <section id="calculator" class="calculator">
+    <div class="display">0</div>
+    <button data-cl class="block-3">AC</button>
+    <button data-op>/</button>
+    <button data-dg>7</button>
+    <button data-dg>8</button>
+    <button data-dg>9</button>
+    <button data-op>+</button>
+    
+    <button data-dg>4</button>
+    <button data-dg>5</button>
+    <button data-dg>6</button>
+    <button data-op>-</button>
+    
+    <button data-dg>1</button>
+    <button data-dg>2</button>
+    <button data-dg>3</button>
+    <button data-op>*</button>
+    
+    <button data-dg class="block-2">0</button>
+    <button data-dg>.</button>
+    <button data-rs>=</button>
+  </section>
+
+  <script src="assets/js/calculator.js"></script>
+  <script>
+    window.onload = () => {
+      calculator('#calculator');
+    }
+  </script>
+</body>
+</html>
